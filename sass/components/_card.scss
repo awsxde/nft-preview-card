@@ -1,0 +1,45 @@
+.card {
+  width: 35rem;
+  height: 59.5rem;
+  padding: 2.3rem;
+  border-radius: 1.4rem;
+
+  .picture {
+    width: 100%;
+    height: 55%;
+    border-radius: 0.7rem;
+  }
+
+  .text-box {
+    width: 100%;
+    height: 25%;
+    padding: 2rem 0.3rem 2.2rem 0.3rem;
+
+    @include flex(column, space-between, flex-start);
+  }
+
+  .detail {
+    width: 100%;
+    height: 8%;
+    @include flex(row, space-between, flex-start);
+
+    &__time,
+    &__price {
+      display: flex;
+      gap: 0.6rem;
+    }
+  }
+
+  .author-box {
+    width: 100%;
+    height: 12%;
+    border-top: 0.1rem solid rgba($White, 0.1);
+    @include flex(row, flex-start, center);
+
+    &__img {
+      width: 11%;
+      border-radius: 50%;
+      border: 0.1rem solid $White;
+    }
+  }
+}

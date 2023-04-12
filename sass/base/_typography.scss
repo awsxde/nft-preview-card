@@ -1,0 +1,42 @@
+body {
+  color: rgba($Soft-blue, 0.7);
+  font-family: "Outfit", sans-serif;
+  background-color: $Very-dark-blue-background;
+}
+
+.card {
+  background-color: $Very-dark-blue-card;
+
+  .text-box {
+    &__heading {
+      color: $White;
+      font-size: 2.3rem;
+      font-weight: 400;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+
+  .detail {
+    font-size: 1.5rem;
+
+    &__price {
+      color: $Cyan;
+    }
+  }
+
+  .author-box {
+    &__name {
+      font-size: 1.5rem;
+
+      span {
+        color: $White;
+        letter-spacing: 0.1rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
